@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView 
+            android:id="@+id/device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:text="HPLUS 8915" />
+
+
+        <TextView
+            android:id="@+id/device_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/device_name"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="14sp"
+            tools:text="mac" />
+
+        <TextView
+            android:id="@+id/device_rssi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/device_name"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:text="rssi" />
+
+        <TextView
+            android:id="@+id/device_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/device_mac"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="12sp"
+            tools:text="HPLUS 8915" />
+    </RelativeLayout>
+</RelativeLayout>
